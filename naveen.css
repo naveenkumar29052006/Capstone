@@ -2,249 +2,243 @@
     margin: 0;
     padding: 0;
 }
-
-body {
-    width: 100%;
+body{
+    font-family: Plus Jakarta Sans;
 }
-
-@font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url('../fonts/static/PlusJakartaSans-Regular.ttf') format('truetype');
-}
-
 header {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
-    padding: 2vh 4vw;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .logo {
-    font-size: 4vw;
+    font-size: 42px;
     font-weight: 100;
-    line-height: 1;
+    line-height: 42px;
     letter-spacing: -0.04em;
     text-align: left;
+    font-family: 
+    Source Serif 4;
 }
-
 header nav ul {
     list-style: none;
     display: flex;
-    gap: 2vw;
-    font-size: 2.5vw;
+    gap: 15px;
+    font-size: 20px;
 }
-
 header nav ul li a {
-    font-size: 2.5vw;
+    font-size: 28px;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 32px;
     letter-spacing: -0.02em;
     text-align: left;
     text-decoration: none;
     color: #333;
-    padding: 0 1vw;
+    padding: 0px 15px;
 }
-
-.class1 {
-    font-family: Plus Jakarta Sans;
-    font-size: 10vw;
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+.hero h1 {
+    font-size: 120px;
     font-weight: 700;
-    line-height: 1;
+    line-height: 120px;
+    letter-spacing: -0.02em;
+    margin-left: 250px;
+    width: 70%;
+    margin-top: 80px;
+    font-family: 
+    Plus Jakarta Sans;
+}
+.hero img {
+    width: 95%;
+    height: 672px;
+    border: 1.5px;
+    margin-top: 40px;
+}
+.project-grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    width: 80%;
+    margin-left: 65px;
+    font-family: 
+    Plus Jakarta Sans;
+}
+.project-grid1 h4{
+    opacity: 60%;
+}
+.project-item img {
+    width: 430px;
+    height: auto;
+    border: 1.5px;
+    display: flex;
+justify-content: space-around;
+align-items: flex-start;}
+.h1_extra {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-top: 160px;
+    width: 55%;
+    margin-left: 350px;
+    font-family: Plus Jakarta Sans;
+}
+.projects-section {
+    margin-top: 180px;
+}
+.projects-section img {
+    width: 1344px;
+    height: 672px;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+.projects-section h2 {
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 120px;
     letter-spacing: -0.02em;
     text-align: center;
 }
-
-.class1 h1 {
-    font-size: 10vw;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    margin: 5vh auto 0;
-    width: 80%;
+.main2 {
+    padding: 40px 20px;
+    text-align: center;
 }
-
-.class1 img {
-    width: 95%;
-    height: auto;
-    border: 1.5px solid #ddd;
-    margin-top: 4vh;
+.main2 h3 {
+    font-size: 34px;
+    font-weight: 100;
+    line-height: 40px;
+    text-align: left;
+    width: 89%;
+    margin-left: 50px;
+    margin-top: 80px;
+    margin-bottom: 60px;
 }
-
-.project-grid1 {
+.main-photos {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 60px;
     justify-content: center;
-    align-items: flex-start;
-    width: 90%;
-    margin: 5vh auto;
 }
-
-.project-item {
+.project-card h4 {
+    font-size: 20px;
+    font-family: "Domine", serif;
+    margin-top: 20px;
+}
+.project-card p {
+    font-size: 15px;
+    margin-top: 20px;
+}
+.project-card img {
+    width: 413.33px;
+    height: 420px;
+}
+.card {
+    background: rgba(106, 90, 205, 1);
+    width: 131px;
+    height: 40px;
+    padding: 10px 20px 10px 20px;
+    color: #F4F4F4;
+    margin-top: 20px;
+    font-family: "Outfit", serif;
+    font-size: 15px;
+    border: none;
+}
+#form {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}
+#text {
+    margin-top: 25px;
+}
+.Contact {
     display: flex;
     flex-direction: column;
-    justify-self: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 150px auto;
+}
+.input {
+    margin: 20px auto;
+    width: 36px;
+    height: 48px;
     text-align: center;
-    width: 300px;
+    background: rgba(23, 20, 46, 0.4);
+    margin-top: 20px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    opacity: 60%;
+}
+.btn {
+    margin: 20px auto;
+    background: rgba(106, 90, 205, 1);
+    color: white;
+    padding: 8px 16px;
+    width: 400px;
+    height: 36px;
+    font-size: 15px;
+    font-weight: 400;
+    border-style: none;
+}
+#skip {
+    color: rgba(106, 90, 205, 1);
+    margin-top: 50px;
+}
+.contact-text h3 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-left: 70px;
+    display: flex;
+    align-items: space;
+}
+.contact-text {
+    display: flex;
+    margin-top: 150px;
 }
 
-.project-item img {
-    width: 100%;
-    height: auto;
-    border: 1.5px solid #ddd;
+.contact-text p {
+    margin-left: 580px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 80%;
+    margin-top: 200px;
+    margin-left: 50px;
+    margin-bottom: 30px;
 }
-
-.project-item img:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-    }
-
-.project-item h3 {
-    margin: 10px 0;
-    font-size: 20px;
-    color: black;
-}
-
-.project-item h4 {
-    font-weight: 200;
-    opacity: 60%;
-}
-
-.h1_extra {
-    font-size: 3vw;
+.text {
+    font-size: 28px;
     font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    text-align: center;
-    margin: 10vh auto 0;
-    width: 50%;
-}
-
-.projects-section {
-    margin-top: 10vh;
-}
-
-.projects-section img {
-    width: 90%;
-    height: auto;
-    margin: 5vh auto;
-    display: block;
-}
-
-.projects-section h2 {
-    font-size: 10vw;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: -0.02em;
-    text-align: center;
-}
-
-.h1_extraaa {
-    font-size: 2vw;
-    font-weight: 700;
-    line-height: 1;
+    line-height: 32px;
     letter-spacing: -0.02em;
     text-align: left;
-    margin: 7vh auto 0;
-    width: 90%;
+    color: rgba(24, 20, 46, 0.62);
 }
-
-.p2 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 50px 0;
-    width: 90%;
-    margin: 20px auto;
-}
-
-.p-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 300px;
-}
-
-.p-item img {
-    width: 100%;
-    height: auto;
-    border: 1.5px solid #ddd;
-}
-
-.p-item h3 {
-    margin: 10px 0;
-    font-size: 20px;
-    color: black;
-}
-
-.p-item h4 {
-    font-weight: 200;
-    opacity: 60%;
-}
-
-.button {
-    display: inline-block;
-    background: rgba(106, 90, 205, 1);
-    color: white;
+.contact-button {
+    border: 1px solid black;
+    margin-right: -160px;
+    background-color: white;
     padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 0;
-    text-align: center;
-    margin-top: 10px;
-    transition: background 0.3s ease;
-}
-
-.button:hover {
-    background: rgba(75, 60, 180, 1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 768px) {
-    .logo {
-        font-size: 6vw;
-    }
-
-    header nav ul {
-        gap: 1.5vw;
-    }
-
-    header nav ul li a {
-        font-size: 3.5vw;
-    }
-
-    .class1 {
-        font-size: 12vw;
-    }
-
-    .class1 h1 {
-        font-size: 12vw;
-    }
-
-    .h1_extra {
-        font-size: 6vw;
-    }
-
-    .h1_extraaa {
-        font-size: 5vw;
-    }
-
-    .projects-section h2 {
-        font-size: 12vw;
-    }
-
-    .project-item {
-        width: 100%;
-    }
-
-    .p-item {
-        width: 100%;
-    }
+    border-radius: 5px;
+    cursor: pointer;
+    width: 168px;
+    height: 52px;
+    font-size: 20px;
 }
