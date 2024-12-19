@@ -5,8 +5,11 @@
 
 body {
     width: 100%;
-    margin: 0;
-    padding: 0;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../fonts/static/PlusJakartaSans-Regular.ttf') format('truetype');
 }
 
 header {
@@ -51,8 +54,6 @@ header nav ul li a {
     line-height: 1;
     letter-spacing: -0.02em;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 
 .class1 h1 {
@@ -72,26 +73,47 @@ header nav ul li a {
 }
 
 .project-grid1 {
-    display: grid;
-    grid-template-columns: repeat(3 ,1fr);
-    gap: 4vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
     width: 90%;
-    margin: 5vh auto 0;
+    margin: 5vh auto;
 }
 
-
-
-.project-grid1 h4{
-    opacity: 60%;
-    display: grid;
-    grid-template-rows: auto;
-    margin-left: -21vw;
+.project-item {
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    align-items: start;
+    text-align: center;
+    width: 300px;
 }
 
 .project-item img {
     width: 100%;
     height: auto;
     border: 1.5px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-item img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    }
+
+.project-item h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: black;
+}
+
+.project-item h4 {
+    font-weight: 200;
+    opacity: 60%;
 }
 
 .h1_extra {
@@ -133,62 +155,58 @@ header nav ul li a {
     width: 90%;
 }
 
-.showcase {
-    display: grid;
-    padding: 50px 0;
-  }
-
-  .showcase-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.p2 {
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+    padding: 50px 0;
     width: 90%;
-    margin: 20px 90px;
-  }
+    margin: 20px auto;
+}
 
+.p-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+}
 
+.p-item img {
+    width: 100%;
+    height: auto;
+    border: 1.5px solid #ddd;
+}
 
-  .showcase-item p {
-    margin: 10px 0;
-    font-size: 17px;
-  }
-
-  .showcase-item h4 {
-    font-weight: 200;
-  }
-
-  .showcase-item h3 {
+.p-item h3 {
     margin: 10px 0;
     font-size: 20px;
-  }
-  
-  .showcase-item h3,
-  h4 {
-    text-align: center;
     color: black;
-    margin-top: 5px;
-    margin-left: -60px;
-  }
+}
 
-  .showcase-item img {
-    width: 90%;
-    
-    margin-left: -25px;
-  }
+.p-item h4 {
+    font-weight: 200;
+    opacity: 60%;
+}
 
-  .button {
+.button {
     display: inline-block;
     background: rgba(106, 90, 205, 1);
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 0px;
-    justify-content: center;
-    margin: 10px 90px;
-    margin-top: 20px;
-  
-  }
-/* Responsive Design */
+    border-radius: 0;
+    text-align: center;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: rgba(75, 60, 180, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 768px) {
     .logo {
         font-size: 6vw;
@@ -220,5 +238,13 @@ header nav ul li a {
 
     .projects-section h2 {
         font-size: 12vw;
+    }
+
+    .project-item {
+        width: 100%;
+    }
+
+    .p-item {
+        width: 100%;
     }
 }
