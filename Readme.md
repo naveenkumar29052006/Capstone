@@ -28,25 +28,28 @@ Includes copyright information and a button to follow you on social media.
 
 File Structure:-
 
+```
+/project-folder  
+    ├── index.html            # Main HTML file for the website  
+    ├── naveen.css            # Main CSS file for styling  
+    ├── /images               # Folder containing all project images  
+    │   ├── main1.png         # Hero image  
+    │   ├── p1.png            # Project 1 image  
+    │   ├── p2.png            # Project 2 image  
+    │   ├── p3.png            # Project 3 image  
+    │   ├── p4.png            # Project 4 image  
+    │   ├── p5.png            # Project 5 image  
+    │   ├── p6.png            # Project 6 image  
+    │   ├── p7.png            # Project 7 image  
+    │   ├── p8.png            # Project 8 image  
+    │   ├── p9.png            # Project 9 image  
+    │   ├── pp1.png           # Featured project 1 image  
+    │   ├── pp2.png           # Featured project 2 image  
+    │   ├── pp3.png           # Featured project 3 image  
+    │   └── main2.png         # Secondary hero image
+```
 
-/project-folder
-    ├── index.html           # Main HTML file for the website
-    ├── naveen.css           # Main CSS file for styling
-    ├── /images              # Folder containing all project images
-        ├── main1.png        # Hero image
-        ├── p1.png           # Project 1 image
-        ├── p2.png           # Project 2 image
-        ├── p3.png           # Project 3 image
-        ├── p4.png           # Project 4 image
-        ├── p5.png           # Project 5 image
-        ├── p6.png           # Project 6 image
-        ├── p7.png           # Project 7 image
-        ├── p8.png           # Project 8 image
-        ├── p9.png           # Project 9 image
-        ├── pp1.png          # Featured project 1 image
-        ├── pp2.png          # Featured project 2 image
-        ├── pp3.png          # Featured project 3 image
-        ├── main2.png        # Secondary hero image
+
 
 
 
