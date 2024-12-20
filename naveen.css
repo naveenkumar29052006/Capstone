@@ -1,10 +1,22 @@
-* {
+*, *::before, *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
-    font-family: Plus Jakarta Sans;
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;  
+    
 }
+
+img {
+    border-radius: 20px;
+    width: 80%;  
+    height: auto;    
+}
+
 header {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
@@ -12,151 +24,213 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;  
 }
+
 .logo {
-    font-size: 42px;
+    font-size: 2em;
     font-weight: 100;
-    line-height: 42px;
+    line-height: 1em;
     letter-spacing: -0.04em;
     text-align: left;
-    font-family: 
-    Source Serif 4;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
 header nav ul {
     list-style: none;
     display: flex;
     gap: 15px;
-    font-size: 20px;
+    font-size: 1em;
+    flex-wrap: wrap;  
 }
+
 header nav ul li a {
-    font-size: 28px;
+    font-size: 1.2em;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 1.2em;
     letter-spacing: -0.02em;
     text-align: left;
     text-decoration: none;
     color: #333;
-    padding: 0px 15px;
+    padding: 0 15px;
 }
+
 .hero {
     text-align: center;
     padding: 50px 20px;
 }
+
 .hero h1 {
-    font-size: 120px;
+    font-size: 5em;
     font-weight: 700;
-    line-height: 120px;
+    line-height: 1em;
     letter-spacing: -0.02em;
-    margin-left: 250px;
+    margin-left: 0;
+    margin-top: 40px;
+    margin-left: 2em;
     width: 70%;
-    margin-top: 80px;
-    font-family: 
-    Plus Jakarta Sans;
 }
+
 .hero img {
-    width: 95%;
-    height: 672px;
-    border: 1.5px;
+    width: 100%;
+    height: auto;
+    border: 1.5px solid #000;
     margin-top: 40px;
 }
+
 .project-grid1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 48px;
-    width: 80%;
-    margin-left: 65px;
-    font-family: 
-    Plus Jakarta Sans;
-}
-.project-grid1 h4{
-    opacity: 60%;
-}
-.project-item img {
-    width: 430px;
-    height: auto;
-    border: 1.5px;
-    display: flex;
-justify-content: space-around;
-align-items: flex-start;}
-.h1_extra {
-    font-size: 48px;
+    width: 100%;
+    padding: 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 52px;
+    line-height: 24px;
+    margin: 5px 0;
+}
+
+.project-grid1 h3 {
+    color: rgba(28, 27, 40, 1);
+    margin-top: 10px;
+}
+
+.project-grid1 h4 {
+    opacity: 60%;
+    margin-top: 0px;
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.h1_extra {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.2em;
     letter-spacing: -0.02em;
     text-align: center;
     margin-top: 160px;
-    width: 55%;
-    margin-left: 350px;
-    font-family: Plus Jakarta Sans;
+    width: 70%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
-.projects-section {
-    margin-top: 180px;
+
+.line1, .line2, .line3 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 7.25em;
 }
-.projects-section img {
-    width: 1344px;
-    height: 672px;
-    margin-left: 80px;
-    margin-top: 50px;
+
+.line2 {
+    margin-right: 0;
 }
-.projects-section h2 {
-    font-size: 120px;
-    font-weight: 700;
-    line-height: 120px;
-    letter-spacing: -0.02em;
+
+.head{
+    font-size: 6em;
+    font-weight: 10em;
+    line-height: 1.2em;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.main1 {
+    padding: 40px 20px;
     text-align: center;
 }
+
 .main2 {
     padding: 40px 20px;
     text-align: center;
 }
+.two img{
+    width: 96%;
+    height: auto;
+    border: 1.5px solid #000;
+    margin-top: 40px;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+   
+    
+    
+}
+
 .main2 h3 {
-    font-size: 34px;
-    font-weight: 100;
-    line-height: 40px;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2em;
     text-align: left;
-    width: 89%;
-    margin-left: 50px;
-    margin-top: 80px;
+    margin-top: 100px;
     margin-bottom: 60px;
+   
 }
+
 .main-photos {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 60px;
-    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    margin-top: -25px;
 }
+
+
 .project-card h4 {
-    font-size: 20px;
-    font-family: "Domine", serif;
+    font-size: 1em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     margin-top: 20px;
 }
+
 .project-card p {
-    font-size: 15px;
+    font-size: 0.9em;
     margin-top: 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
 .project-card img {
-    width: 413.33px;
-    height: 420px;
+    width: 100%;
+    height: auto;
 }
+
 .card {
     background: rgba(106, 90, 205, 1);
-    width: 131px;
-    height: 40px;
-    padding: 10px 20px 10px 20px;
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
     color: #F4F4F4;
     margin-top: 20px;
-    font-family: "Outfit", serif;
-    font-size: 15px;
-    border: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.9em;
+    border-radius: 1em;
 }
+
 #form {
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 20px;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1em;
     text-align: center;
+    margin-top: 3em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
+#form2 {
+    font-size: 2em;
+    font-weight: 700
+}
+
 #text {
     margin-top: 25px;
 }
+
+
 .Contact {
     display: flex;
     flex-direction: column;
@@ -165,80 +239,174 @@ align-items: flex-start;}
     padding: 10px;
     margin: 150px auto;
 }
-.input {
-    margin: 20px auto;
-    width: 36px;
-    height: 48px;
-    text-align: center;
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.input-square {
+    width: 100px;
+    height: 100px;
     background: rgba(23, 20, 46, 0.4);
-    margin-top: 20px;
     border: none;
     color: #FFFFFF;
-    font-size: 20px;
-    padding: 10px;
-    margin-left: 10px;
+    font-size: 1em;
+    text-align: center;
     opacity: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 }
+
 .btn {
-    margin: 20px auto;
+    margin-top: 20px;
     background: rgba(106, 90, 205, 1);
     color: white;
     padding: 8px 16px;
-    width: 400px;
-    height: 36px;
-    font-size: 15px;
-    font-weight: 400;
+    width: 100%;
+    max-width: 200px;
+    font-size: 0.9em;
     border-style: none;
-}
-#skip {
-    color: rgba(106, 90, 205, 1);
-    margin-top: 50px;
-}
-.contact-text h3 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 32px;
-    margin-left: 70px;
-    display: flex;
-    align-items: space;
-}
-.contact-text {
-    display: flex;
-    margin-top: 150px;
+    text-align: center;
+    cursor: pointer;
 }
 
-.contact-text p {
-    margin-left: 580px;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
+#skip {
+    color: rgba(106, 90, 205, 1);
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
 }
+
+
+.contact-text h3 {
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1em;
+    
+   
+    display: grid;
+    align-items: start;
+    justify-self: start;
+    justify-content: start;
+    margin-top: 4em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+
+.contact-text p {
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 2em;
+    display: grid;
+    align-items: end;
+    justify-self: end;
+    justify-content: end;
+    margin-top: -3em;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+ 
+    
+}
+
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin-top: 200px;
-    margin-left: 50px;
-    margin-bottom: 30px;
+    
+    width: 100%;
+    max-width: 1200px;
+    
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
 .text {
-    font-size: 28px;
+    font-size: 1.2em;
     font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.02em;
+    line-height: 1em;
     text-align: left;
     color: rgba(24, 20, 46, 0.62);
 }
+
+
 .contact-button {
     border: 1px solid black;
-    margin-right: -160px;
     background-color: white;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    width: 168px;
-    height: 52px;
-    font-size: 20px;
+    font-size: 1em;
+    text-align: end;
+    margin-right: -4em;
+}
+
+img {
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 768px) {
+    .h1_extra {
+        width: 80%;
+        font-size: 1.5em;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .project-grid1 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+   
+
+    .main-photos {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .contact-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    .h1_extra {
+        font-size: 1.2em;
+    }
+
+    .project-grid1 {
+        grid-template-columns: 1fr;
+    }
+
+    .main2 h3 {
+        font-size: 1.2em;
+    }
+
+    .contact-text p {
+        font-size: 1em;
+    }
 }
