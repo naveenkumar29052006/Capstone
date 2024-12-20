@@ -10,6 +10,7 @@ body {
     overflow-x: hidden;  
     
 }
+ 
 
 img {
     border-radius: 20px;
@@ -179,7 +180,7 @@ header nav ul li a {
     gap: 60px;
     justify-items: center;
     flex-wrap: wrap;
-    margin-top: -25px;
+    margin-top: -24px;
 }
 
 
